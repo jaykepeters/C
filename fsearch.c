@@ -20,15 +20,6 @@ int main(int argc, char *argv[])
 
     int wCount;
 
-
-    // Checking if number of argument is 
-    // equal to 2 or not. 
-    if (argc < 2 || argc > 3)  
-    { 
-        printf("ERROR: Invalid Arguments\n Required Arguments: file word\n"); 
-        return 0; 
-    } 
-
     // Arguments
     strcpy(path, argv[1]);
     strcpy(word, argv[2]);
@@ -49,6 +40,14 @@ int main(int argc, char *argv[])
         scanf("%s", word);
     }
    
+    // Checking if number of argument is 
+    // equal to 2 or not. 
+    if (argc < 2 || argc > 3)  
+    { 
+        printf("ERROR: Invalid Arguments\n Required Arguments: file word\n"); 
+        return 0; 
+    } 
+    
     /* Try to open file */
     fptr = fopen(path, "r");
 
