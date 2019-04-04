@@ -1,5 +1,5 @@
 //
-//  My Project.c
+//  my_first_program.c
 //  
 //
 //  Created by Jayke Peters on 4/2/19.
